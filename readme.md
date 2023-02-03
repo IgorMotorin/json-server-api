@@ -19,12 +19,12 @@ Api for task "RS Clone".
 
 	в Body запроса пишем JSON: 
 
-        ```json
+    ```json
         {
             "email": "olivier2@mail.com", // свои данные
             "password": "bestPassw0rd"  // свои данные
         }
-        ```
+    ```
 							
 
 	Сервер в ответе пришлет id пользователя и accessToken (как в примере ниже)
@@ -54,23 +54,23 @@ Api for task "RS Clone".
 	в Body запроса пишем JSON:
 
     ```json
-			{
-			  "email": "olivier12@mail.com",
-			  "password": "bestPassw0rd11"
-			}
+        {
+            "email": "olivier12@mail.com",
+            "password": "bestPassw0rd11"
+        }
     ```
 
 	Сервер в ответе пришлет id пользователя и обновленный accessToken
 
 	Response:
     ```json
-			{
-				"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXIxQG1haWwuY29tIiwiaWF0IjoxNjc1NDM3Njk3LCJleHAiOjE2NzU0NDEyOTcsInN1YiI6IjQifQ.Ca5h8xNzmfJzyiSxCayZzKN5ZxOlJm68Ib1uug720co",
-				"user": {
-					"email": "olivier1@mail.com",
-					"id": 4
-				}
-			}
+        {
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXIxQG1haWwuY29tIiwiaWF0IjoxNjc1NDM3Njk3LCJleHAiOjE2NzU0NDEyOTcsInN1YiI6IjQifQ.Ca5h8xNzmfJzyiSxCayZzKN5ZxOlJm68Ib1uug720co",
+            "user": {
+                "email": "olivier1@mail.com",
+                "id": 4
+            }
+        }
     ```
 
 - **User**
