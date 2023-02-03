@@ -19,41 +19,51 @@ Api for task "RS Clone".
 
 	в Body запроса пишем JSON: 
 
-							{
-							  "email": "olivier2@mail.com", // свои данные
-							  "password": "bestPassw0rd"  // свои данные
-							}
+        ```json
+        {
+            "email": "olivier2@mail.com", // свои данные
+            "password": "bestPassw0rd"  // свои данные
+        }
+        ```
 							
 
 	Сервер в ответе пришлет id пользователя и accessToken (как в примере ниже)
 
 	Response:
-				{
-					"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXIxQG1haWwuY29tIiwiaWF0IjoxNjc1NDM3MTE4LCJleHAiOjE2NzU0NDA3MTgsInN1YiI6IjQifQ.c6uMSTy8dwWRJzmH1g-sCXsXxxyHHoFQcQpdN7ovXf8",
-					"user": {
-						"email": "olivier1@mail.com",
-						"id": 4
-					}
-				}
+    ```json
+        {
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXIxQG1haWwuY29tIiwiaWF0IjoxNjc1NDM3MTE4LCJleHAiOjE2NzU0NDA3MTgsInN1YiI6IjQifQ.c6uMSTy8dwWRJzmH1g-sCXsXxxyHHoFQcQpdN7ovXf8",
+            "user": {
+                "email": "olivier1@mail.com",
+                "id": 4
+            }
+        }
+    ```
 
 2. Дальше все последующие запросы делаем с 	accessToken, для этого необходимо в Headers запросов в поле Authorization установить тип авторизации Bearer и токен полученный при регистрации.
-		
+
+    ```json	
 		Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXJAbWFpbC5jb20iLCJpYXQiOjE2NzU0MzU5NjAsImV4cCI6MTY3NTQzOTU2MCwic3ViIjoiMyJ9.wkzZjoRZXzrMYjVFBdwuZwg_hxPGmyAEIr7rPi6cyZw
+	```
 		
-		
-3. Токен живет 1 час, по истечении часа необходимо получить новый токен. Для этого выполнить Login.
+3. Токен живет 1 час, по истечении часа необходимо получить новый токен. Для этого выполнить вход в систему Login.
 	
 	
 	Делаем запрос: POST  http://localhost:3000/login
 
-	в Body запроса пишем JSON::
+	в Body запроса пишем JSON:
+
+    ```json
 			{
 			  "email": "olivier12@mail.com",
 			  "password": "bestPassw0rd11"
 			}
+    ```
 
 	Сервер в ответе пришлет id пользователя и обновленный accessToken
-			Response:
+
+	Response:
+    ```json
 			{
 				"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXIxQG1haWwuY29tIiwiaWF0IjoxNjc1NDM3Njk3LCJleHAiOjE2NzU0NDEyOTcsInN1YiI6IjQifQ.Ca5h8xNzmfJzyiSxCayZzKN5ZxOlJm68Ib1uug720co",
 				"user": {
@@ -61,6 +71,7 @@ Api for task "RS Clone".
 					"id": 4
 				}
 			}
+    ```
 
 - **User**
     - [Register User](https://github.com/igormotorin/json-server-api#register-user)
