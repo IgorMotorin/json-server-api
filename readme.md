@@ -19,14 +19,14 @@ Api for task "RS Clone".
     - [Update User](https://github.com/igormotorin/json-server-api#update-user)
     - [Delete User](https://github.com/igormotorin/json-server-api#delete-user)
 
-**Settings**
+- **Settings**
     - [Set settings User](https://github.com/igormotorin/json-server-api#set-settings-user)
     - [Get all settings user](https://github.com/igormotorin/json-server-api#get-all-settings-user)
     - [Update settings user](https://github.com/igormotorin/json-server-api#update-settings-user)
     - [Delete settings user](https://github.com/igormotorin/json-server-api#delete-settings-user)
     
 
-**Transactions**
+- **Transactions**
     - [Set transactions User](https://github.com/igormotorin/json-server-api#set-transactions-user)
     - [Get all transactions user](https://github.com/igormotorin/json-server-api#get-all-transactions-user)
     - [Update transactions user](https://github.com/igormotorin/json-server-api#update-transactions-user)
