@@ -1,0 +1,7 @@
+{
+    "/users*": "/600/users$1",
+    "/settings": "/600/users/settings",
+    "/settings*": "/600/settings$1",
+    "/transactions": "/600/users/transactions",
+    "/transactions*": "/600/transactions$1"
+  }

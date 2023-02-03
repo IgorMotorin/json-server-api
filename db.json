@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "email": "olivier2@mail.com",
+      "password": "$2a$10$MH40vDL4g0X/LogOllKj2.VJ0hW.9D5tzh6/m9mSYcuEkKNtmUdVW",
+      "id": 2
+    },
+    {
+      "email": "11olivier111@mail.com",
+      "password": "$2a$10$o/p098FRYSEbcYKVdhxkx.HuDH4zmetncEzMSVEe4VYPaFOmdGGju",
+      "id": 3
+    }
+  ],
+  "settings": [
+    {
+      "lang": "en",
+      "theme": "dddd",
+      "currency": "usd",
+      "userId": "2",
+      "id": 6
+    },
+    {
+      "lang": "en",
+      "theme": "rrrrr",
+      "currency": "usd",
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "lang": "en",
+      "theme": "dddd",
+      "currency": "usd",
+      "userId": "2",
+      "id": 8
+    },
+    {
+      "lang": "en",
+      "theme": "rrrrr",
+      "currency": "usd",
+      "userId": 3,
+      "id": 9
+    }
+  ],
+  "transactions": [
+    {
+      "type": "111expense",
+      "category": "mobile",
+      "subcategory": "tele2",
+      "description": "апрель",
+      "data": "1",
+      "time": "1",
+      "sum": 100,
+      "userId": 2,
+      "id": 1
+    }
+  ]
+}
